@@ -121,3 +121,23 @@ in you terminal go to the project workspace, in the modules folder, run the comm
 ## Front End 2E2 Tests
 * To perform the cypress tests, you will need to import the React portlet with data served by Mockoon.
 * Once that's done, you just join in react app module path and run: `npm cypress:open` or `yarn cypress:open`.
+
+## Naming Pattern
+### Branches
+For branches, we have a set of two main information: the project's abbreviation, in this case, <abbr title="Liferay Sample Workspace">LSW</abbr>, and the issue's number, for example: `LSW-46`.
+
+```bash
+  git checkout -b LSW-46
+```
+### Commit messages
+For commit messages, there are three main information: the branch's name, the key verb, and the message itself.
+The key verb should always be capitalized (firt letter in uppercase), for example: `Add`, `Change`, `Fix`, `Remove`.
+
+```bash
+  git commit -m "LSW-46 Add documentation on README.MD"
+```
+#### Commit message examples:
+
+- `LSW-46 Add documentation on README.MD`
+- `LSW-46 Fix merge conflicts`
+
